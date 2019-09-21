@@ -1,0 +1,25 @@
+{
+  "name": "real-estate-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrera713/Real-Estate-Website.git"
+  },
+  "author": "carlos barrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barrera713/Real-Estate-Website/issues"
+  },
+  "homepage": "https://github.com/barrera713/Real-Estate-Website#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
+  }
+}

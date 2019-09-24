@@ -4,11 +4,12 @@ const PropertySchema = mongoose.Schema({
     address: String,
     city: String,
     state: String,
-    image: String,
+    mainImage: String,
     rooms: Number,
     price: Number,
     floorSpace: Number,
     homeType: String,
+    images: Array,
     extras: Array
 });
 

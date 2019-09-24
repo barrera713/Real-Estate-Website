@@ -3,12 +3,14 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser'); 
+const cors = require('cors');
 
-
+// Middlewares
+app.use(cors());
 app.use(bodyParser.json());
 
 // Import Routes
-const homeRoute = require('./routes/home');
+const homeRoute = require('./routes/properties');
 app.use('/', homeRoute);
 
 // Connect DB

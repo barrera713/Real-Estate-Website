@@ -28,7 +28,9 @@ router.post('/new', async (req, res) => {
         floorSpace: req.body.floorSpace,
         homeType: req.body.homeType,
         images: req.body.images,
-        extras: req.body.extras
+        extras: req.body.extras,
+        rent: req.body.rent,
+        sale: req.body.sale
     });
     try {
         const savedProperty = await property.save()
@@ -71,7 +73,10 @@ router.patch('/:propertyId', async (req, res) => {
                 floorSpace: req.body.floorSpace,
                 homeType: req.body.homeType,
                 images: req.body.images,
-                extras: req.body.extras }}
+                extras: req.body.extras,
+                rent: req.body.rent,
+                sale: req.body.sale 
+            }}
             );
         res.json(updateProperty);
     } catch (err) {

@@ -10,7 +10,9 @@ const PropertySchema = mongoose.Schema({
     floorSpace: Number,
     homeType: String,
     images: Array,
-    extras: Array
+    extras: Array,
+    rent: Boolean,
+    sale: Boolean
 });
 
 module.exports = mongoose.model('Property', PropertySchema );

@@ -1,13 +1,12 @@
 import React from 'react';
 
-
-function About() {
+function Rent() {
 
     return (
         <div>
-            <h1>About</h1>
+            <h1>Rent</h1>
         </div>
     )
 }
 
-export { About }
+export { Rent }

@@ -19,8 +19,9 @@ nav {
 nav h3 {
   font-size: 25px;
   letter-spacing: 4px;
-  color: rgb(174, 243, 208);
+  color: rgb(79, 104, 243);
   padding-left: 5%;
+  letter-spacing: 12px;
 }
 
 .nav-links {
@@ -31,10 +32,13 @@ nav h3 {
 
 .nav-links li {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-
+.nav-links li:hover {
+  color: rgb(79, 104, 243);
+}
 
 
 

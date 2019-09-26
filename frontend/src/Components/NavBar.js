@@ -1,11 +1,8 @@
 import React from 'react';
-import history from '../history';
+import { Link } from 'react-router-dom';
+
 
 class NavBar extends React.Component {
-
-    buy = () => {
-        history.push('/for-sale')
-    }
 
     render() {
         return (
@@ -14,10 +11,18 @@ class NavBar extends React.Component {
                 <h3>homeFinder</h3>
             </div>
             <ul className="nav-links">
-                <li onClick={this.buy}>Buy</li>
-                <li>Rent</li>
-                <li>Login</li>
-                <li>Join</li>
+                <Link to="/for-sale">
+                    <li>Buy</li>
+                </Link>
+                <Link to="/for-rent">
+                    <li>Rent</li>
+                </Link>
+                <Link>
+                    <li>Login</li>
+                </Link>
+                <Link>
+                    <li>Join</li>
+                </Link>
             </ul>
         </nav>
         )

@@ -6,14 +6,16 @@ const Card = (props) => {
 
     const { property } = props
     
-    return (<div>
+    return (
         <div className="card">
             <img className="card-img" src={property.photo} alt="img"/>
-            <h4 className="card-header">{property.price}</h4>
-            {property.address}
-            {property.city, property.state}
+            <div className="card-text">
+                <h3>${property.price} {property.rooms} BDS</h3>
+                <h4>{property.address}</h4>
+                <p>{property.city}, {property.state}</p>
+            </div>
         </div>
-        </div>)
+        )
 }
 
 

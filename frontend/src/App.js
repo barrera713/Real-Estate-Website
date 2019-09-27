@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import history from './history';
 import { NavBar } from './Components/NavBar';
 import { Home } from './Components/Home';
 import './App.css';
-import { Buy } from './Components/Buy';
+import  Buy  from './Components/Buy';
 import { Rent } from './Components/Rent';
 
 function App() {

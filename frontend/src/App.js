@@ -1,11 +1,11 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import history from './history';
-import { NavBar } from './Components/NavBar';
-import { Home } from './Components/Home';
+import { NavBar } from './Containers/NavBar';
+import { Home } from './Containers/Home';
 import './App.css';
-import  Buy  from './Components/Buy';
-import { Rent } from './Components/Rent';
+import  Buy  from './Containers/Buy';
+import { Rent } from './Containers/Rent';
 
 function App() {
   return (

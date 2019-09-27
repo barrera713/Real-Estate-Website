@@ -28,6 +28,7 @@ nav h3 {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  text-decoration: none;
 }
 
 .nav-links li {
@@ -36,8 +37,9 @@ nav h3 {
   cursor: pointer;
 }
 
-.nav-links li:hover {
+.nav-links li:hover li:visited {
   color: rgb(79, 104, 243);
+  text-decoration: none;
 }
 
 

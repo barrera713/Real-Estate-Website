@@ -4,7 +4,7 @@ const PropertySchema = mongoose.Schema({
     address: String,
     city: String,
     state: String,
-    mainImage: String,
+    photo: String,
     rooms: Number,
     price: Number,
     floorSpace: Number,

@@ -1,10 +1,12 @@
 import React from 'react';
+import ForRentCard from '../Components/ForRentCard';
+
 
 function Rent() {
 
     return (
         <div>
-            <h1>Rent</h1>
+            <ForRentCard />
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { fetchSaleProperties } from '../Actions/BuyActions';
 
 
 
-class PropertyCard extends React.Component {
+class ForSaleCard extends React.Component {
 
     componentDidMount() {
         this.props.fetchSaleProperties()
@@ -15,12 +15,13 @@ class PropertyCard extends React.Component {
 
         const properties = this.props.properties
 
-        let card = properties.map( i => {
-            return(<div>
+        let card = properties.map(i => {
+            if(i.sale === true)
+            return (<div>
                 <h1>{i.state}</h1>
             </div>
             )
-        })
+        });
 
         return (
             <div>
@@ -35,4 +36,4 @@ const mapStateToProps = state => ({
     properties: state.forSale.sellData
 })
 
-export default connect(mapStateToProps, { fetchSaleProperties })(PropertyCard);
+export default connect(mapStateToProps, { fetchSaleProperties })(ForSaleCard);

@@ -8,6 +8,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Nav Bar */
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -41,6 +43,28 @@ nav h3 {
   color: rgb(79, 104, 243);
   text-decoration: none;
 }
+
+
+/* Card */
+
+
+
+.card {
+  padding: 25px;
+  position: absolute;
+  margin: 5% 0% 0% 5%;
+  border-radius: 20px;
+  background-color: rgba(119, 129, 139, 0.596);
+  text-align: center;
+}
+
+.card-img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+
 
 
 

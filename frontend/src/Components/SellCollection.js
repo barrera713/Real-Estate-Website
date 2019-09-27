@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSaleProperties } from '../Actions/BuyActions';
+import Card from './Card';
 
 
 
@@ -11,25 +12,15 @@ class ForSaleCard extends React.Component {
     }
 
     render() {
-        console.log(this.props.properties)
-
-        const properties = this.props.properties
-
-        let card = properties.map(i => {
-            if(i.sale === true)
-            return (<div>
-                <img src={i.photo} size="300px"/>
-                <h1>{i.state}</h1>
-            </div>
-            )
-        });
 
         return (
-            <div>
-                {card}
-            </div>
+            this.props.properties.map(i => {
+                if(i.rent === false)
+                return <Card property={i} /> 
+            })
         )
     }
+    
 
 }
 

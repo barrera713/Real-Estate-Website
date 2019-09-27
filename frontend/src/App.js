@@ -3,9 +3,11 @@ import { Router, Route, Switch } from 'react-router-dom';
 import history from './history';
 import { NavBar } from './Containers/NavBar';
 import { Home } from './Containers/Home';
+import Card from './Components/Card';
 import './App.css';
-import  Buy  from './Containers/Buy';
-import { Rent } from './Containers/Rent';
+// import  Buy  from './Containers/Buy';
+import RentCollection from './Components/RentCollection';
+import SellCollection from './Components/SellCollection';
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/for-sale' component={Buy} />
-        <Route exact path='/for-rent' component={Rent} />
+        <Route exact path='/for-sale' component={SellCollection} />
+        <Route exact path='/for-rent' component={RentCollection} />
+        <Route exact path='/card' component={Card} />
       </Switch>
     </Router>
     </div>

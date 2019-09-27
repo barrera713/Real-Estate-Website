@@ -18,6 +18,7 @@ class ForRentCard extends React.Component {
         let card = properties.map(i => {
             if(i.rent === true)
             return (<div>
+                <img src={i.photo} />
                 <h1>{i.state}</h1>
             </div>
             )

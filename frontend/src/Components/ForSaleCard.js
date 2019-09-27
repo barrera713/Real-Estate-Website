@@ -18,6 +18,7 @@ class ForSaleCard extends React.Component {
         let card = properties.map(i => {
             if(i.sale === true)
             return (<div>
+                <img src={i.photo} size="300px"/>
                 <h1>{i.state}</h1>
             </div>
             )

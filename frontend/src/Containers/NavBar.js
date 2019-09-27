@@ -8,7 +8,7 @@ class NavBar extends React.Component {
         return (
             <nav>
             <div>
-                <h3>homeFinder</h3>
+                <h3>HomeHunter</h3>
             </div>
             <ul className="nav-links">
                 <Link to="/for-sale">

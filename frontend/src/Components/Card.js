@@ -5,6 +5,10 @@ import React from 'react';
 const Card = (props) => {
 
     const { property } = props
+
+    const handleClick = () => {
+        alert('ugabuga!')
+    }
     
     return (
         <div className="card">
@@ -13,6 +17,7 @@ const Card = (props) => {
                 <h3>${property.price} {property.rooms} BDS</h3>
                 <h4>{property.address}</h4>
                 <p>{property.city}, {property.state}</p>
+                <button onClick={handleClick} className="save-button">Favorite</button>
             </div>
         </div>
         )

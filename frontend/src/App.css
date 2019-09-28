@@ -55,7 +55,7 @@ nav h3 {
   border-radius: 20px;
   background-color: rgba(109, 130, 151, 0.596);
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
 .card-img {
@@ -84,6 +84,12 @@ nav h3 {
   clear: both;
 }
 
+.save-button {
+  width: 25%;
+  background-color: red;
+  border-radius: 20px;
+  float: right;
+}
 
 /* @media screen and (max-width: 600px) {
   .column {

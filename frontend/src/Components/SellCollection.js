@@ -13,7 +13,7 @@ class ForSaleCard extends React.Component {
 
     render() {
 
-        return (
+        return ( <div className="card-container">
             <div className="row">
                 <div className="column">
                     {this.props.properties.map(i => {
@@ -22,6 +22,7 @@ class ForSaleCard extends React.Component {
                     })}
                 </div>
             </div>
+        </div>
         )
     }
     

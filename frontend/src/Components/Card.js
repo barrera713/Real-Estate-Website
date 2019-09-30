@@ -17,7 +17,7 @@ const Card = (props) => {
                 <h3>${property.price} {property.rooms} BDS</h3>
                 <h4>{property.address}</h4>
                 <p>{property.city}, {property.state}</p>
-                <button onClick={handleClick} className="save-button">Favorite</button>
+                <button onClick={handleClick} className="save-button">Save</button>
             </div>
         </div>
         )

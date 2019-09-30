@@ -7,8 +7,8 @@ const Card = (props) => {
     const { property } = props
 
     const handleClick = () => {
-        alert('ugabuga!')
-    }
+        console.log('ugabuga!');
+    };
     
     return (
         <div className="card">

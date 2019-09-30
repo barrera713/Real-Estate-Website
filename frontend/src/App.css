@@ -49,8 +49,8 @@ nav h3 {
 /* Card */
 
 .card {
-  width: 400px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   margin: 5% 0% 0% 5%;
   border-radius: 20px;
   background-color: rgba(109, 130, 151, 0.596);
@@ -59,7 +59,7 @@ nav h3 {
 }
 
 .card-img {
-  padding: 10px 0 10px 0;
+  padding: 15px 0 10px 0;
   width: 80%;
   height: 75%;
 }
@@ -85,11 +85,23 @@ nav h3 {
 }
 
 .save-button {
-  width: 25%;
-  background-color: red;
-  border-radius: 20px;
-  float: right;
+  width: 25%; 
+  padding: 3px;
+  background-color: rgba(0, 130, 236, 0.808);
+  padding: 5px 0 5px 0;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
 }
+
+.save-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  background-color: rgba(255, 255, 255, 0.671);
+}
+
+
 
 /* @media screen and (max-width: 600px) {
   .column {

@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  height: 100%;
 }
 
 /* Nav Bar */
@@ -23,10 +22,9 @@ nav {
   cursor: pointer;
   font-size: 18px;
   text-transform: capitalize;
-  letter-spacing: 4px;
   color: rgb(243, 243, 243);
-  padding-left: 5%;
-  letter-spacing: 12px;
+  padding: 5%;
+  letter-spacing: 10px;
 }
 
 .logo:hover {
@@ -54,17 +52,25 @@ nav {
 
 /* Card */
 
-.card-container {
-  column-count: 4;
+.cards-container {
   background: red;
 }
 
+.cards {
+  padding: 0 20px 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
-  max-width: 330px;
-  height: 370px;
-  margin: 10px;
+  flex: 0 1 calc(25% - 1em);
+  margin-top: 10px;
+  max-width: 350px;
+  height: 400px;
   border-radius: 18px;
-  background-color: #e0e0e0;
+  border-color: rgba(16, 16, 228, 0.616);
+  background-color: #fdfdfd;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 }
@@ -79,47 +85,38 @@ nav {
   justify-content: center;
 }
 
-.column {
-  /* float: left; */
-  width: 25%;
-  padding: 10px 0 15px 7px;
-  display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+.save-btn {
+  outline: none;
+  width: 25%; 
+  margin-bottom: 10px;
+  background-color: rgba(126, 178, 255, 0.863);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
-.row {
-  margin: 0 -5px;
+.save-btn:hover {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  background-color: rgba(0, 130, 236, 0.808);
 }
-
-.row:after{
-  content: "";
-  display: table;
-  clear: both;
-} 
-
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
+  .cards {
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 
-.save-button {
-  width: 25%; 
-  padding: 3px;
-  background-color: rgba(0, 130, 236, 0.808);
-  padding: 5px 0 5px 0;
-  border-radius: 25px;
-  outline: none;
-  cursor: pointer;
-}
 
-.save-button:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  background-color: rgba(255, 255, 255, 0.671);
-}
 
 
 

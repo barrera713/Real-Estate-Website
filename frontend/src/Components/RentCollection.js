@@ -15,8 +15,10 @@ class ForRentCard extends React.Component {
     render() {
 
         return (
-        <div className="row">
-            <div className="column">
+            // row was here
+        <div >
+            {/* column was here */}
+            <div >
             {this.props.properties.map(i => {
                 if(i.rent === true)
                 return <Card property={i} /> 

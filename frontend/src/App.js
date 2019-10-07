@@ -5,7 +5,6 @@ import { NavBar } from './Containers/NavBar';
 import { Home } from './Containers/Home';
 import Card from './Components/Card';
 import './App.css';
-// import  Buy  from './Containers/Buy';
 import RentCollection from './Components/RentCollection';
 import SellCollection from './Components/SellCollection';
 

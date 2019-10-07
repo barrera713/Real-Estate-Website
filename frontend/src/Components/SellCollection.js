@@ -13,9 +13,12 @@ class ForSaleCard extends React.Component {
 
     render() {
 
-        return ( <div className="card-container">
-            <div className="row">
-                <div className="column">
+            // Card Container was here
+        return ( <div >
+            {/* Row was here */}
+            <div >
+                {/* Column was here */}
+                <div >
                     {this.props.properties.map(i => {
                         if(i.rent === false)
                         return <Card property={i} /> 
